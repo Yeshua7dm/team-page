@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+body {
+    font-family: "Poppins";
+    /* font-size: 14px; */
+}
+.container {
+    margin: 10px;
+}
+.pt-serif {
+    font-family: "PT Serif", serif;
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+header h1 {
+    margin: 38px 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+main {
+    margin-bottom: 100px;
+}
+.description h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.description p {
+    padding: 2px 30px 30px 0;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+}
+.team-member article {
+    display: flex;
+}
+.team-member article img {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.member-role {
+    min-width: max-content;
+    transform: rotate(0.25turn);
+    height: max-content;
+    margin-left: -20px;
+    margin-top: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+}
+.m-2 {
+    margin-top: 50px;
+}
+.member-name {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: capitalize;
+}
+
+.container > footer {
+    text-align: center;
+    color: #a9a9a9;
+    margin: auto;
+}
+.username {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+    .team {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 50px;
+    }
+    .m-2 {
+        margin-top: 0;
+    }
+    .m-1 {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        margin-top: 110px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header > article {
+        min-width: 300px;
+        width: 400px;
+    }
+    .container {
+        margin: auto;
+        max-width: 900px;
+    }
+    header h1 {
+        min-width: max-content;
+    }
+}
