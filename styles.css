@@ -102,7 +102,7 @@ main {
     header {
         margin-top: 110px;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     header > article {
         min-width: 300px;
@@ -114,5 +114,8 @@ main {
     }
     header h1 {
         min-width: max-content;
+    }
+    .description {
+        padding: 0 30px 10px 0;
     }
 }
